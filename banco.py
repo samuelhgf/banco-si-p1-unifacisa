@@ -8,10 +8,10 @@ class Banco :
     def exibe_menu(self) :
         print('Bem-vindo ao banco de SI\n')
         print('1. Listar clientes\n2. Criar cliente\n3. Remover cliente\n4. Editar cliente\n5. Fazer deposito\n6. Fazer saque\n7. Fazer transferencia\n8. Saldo de Conta\n9. Extrato de conta')
-        opcao = int(raw_input('\nDigite uma opcao: '))
+        opcao = int(input('\nDigite uma opcao: '))
         while opcao < 1 or opcao > 9 :
             print('ERRO: OPCAO INVALIDA')
-            opcao = int(raw_input('Digite uma opcao: '))
+            opcao = int(input('Digite uma opcao: '))
         return opcao
 
     def extrato(self, cpf, senha) :

@@ -1,9 +1,9 @@
 from banco import *
 
 def pede_dados_cliente() :
-    nome = raw_input('Digite o nome: ')
-    cpf = raw_input('Digite o cpf: ')
-    senha = raw_input('Digite a senha de acesso: ')
+    nome = input('Digite o nome: ')
+    cpf = input('Digite o cpf: ')
+    senha = input('Digite a senha de acesso: ')
     return nome, cpf, senha
 
 
@@ -18,6 +18,6 @@ while continuar.lower() == 's' :
         nome, cpf, senha = pede_dados_cliente()
         banco.cria_conta(nome, cpf, senha)    
     
-    continuar = raw_input('Deseja continuar (s/n): ')
+    continuar = input('Deseja continuar (s/n): ')
 
 print('Au revoir!')

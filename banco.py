@@ -33,7 +33,15 @@ class Banco :
         pass
     
     def remove_cliente(self, cpf, senha) :
-        pass
+        for cliente in self.clientes :
+            if cliente.cpf == cpf:
+                if cliente.senha == senha:
+                    self.clientes.remove(cliente)
+                    return print('Cliente removido com sucesso')
+                else:
+                    return print('Senha incorreta')
+            else:
+                return print('Cliente nao encontrado')
 
     def existe_cliente(self, cpf) :
         for cliente in self.clientes :

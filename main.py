@@ -19,7 +19,7 @@ def pede_dados_cliente() :
 
 def pede_dados_remocao():
     cpf = cpf_cadastrado(input('Digite o cpf: '))
-    senha = input('Digite a senha: ')
+    senha = int(input('Digite a senha: '))
     return cpf, senha
 
 def pede_dados_edicao():
